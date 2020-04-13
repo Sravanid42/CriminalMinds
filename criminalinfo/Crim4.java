@@ -6,6 +6,13 @@ import javax.swing.JLabel;
 
 //import UI.*;
 
+/**
+ * 
+ * @author Catherine
+ * Crim4: 
+ *
+ */
+
 public class Crim4
 {
 	//make objects

@@ -7,7 +7,10 @@ import javax.swing.JLabel;
 //import UI.*;
 
 /**
- * Crim1: Catherine Gu
+ * 
+ * @author Catherine
+ * Crim1: Catherine
+ *
  */
 
 public class Crim1

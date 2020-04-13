@@ -5,10 +5,13 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 //import UI.*;
-/**
- * Crim2: 
- */
 
+/**
+ * 
+ * @author Catherine
+ * Crim2: Sravani
+ *
+ */
 public class Crim2
 {
 	//make objects
@@ -42,10 +45,10 @@ public class Crim2
 	public static String main(String[] args)
 	{
 		//add
-		Crim2 CG = new Crim2("Catherine Gu","17", "5'4''", "F", "black", "CA", "Annoying Sravani", "Last Seen: Over a Zoom call");
-		System.out.println(CG);
+		Crim2 SD = new Crim2("Sravani","18", "5'5''", "F", "black", "CA", "Not doing work", "Last seen: On a Zoom call");
+		System.out.println(SD);
 		
-		return CG.toString() ;
+		return SD.toString() ;
 	}
 	
 	public static String delete() {

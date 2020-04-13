@@ -6,6 +6,12 @@ import javax.swing.JLabel;
 
 //import UI.*;
 
+/**
+ * 
+ * @author Catherine
+ * Crim3: Gary Leon Ridgway
+ *
+ */
 public class Crim3
 {
 	//make objects
@@ -39,10 +45,10 @@ public class Crim3
 	public static String main(String[] args)
 	{
 		//add
-		Crim3 CG = new Crim3("Catherine Gu","17", "5'4''", "F", "black", "CA", "Annoying Sravani", "Last Seen: Over a Zoom call");
-		System.out.println(CG);
+		Crim3 GR = new Crim3("Gary Ridgway","71", "5'10''", "M", "black", "UT", "49 separate murders, solicitation", "Life sentence without parole");
+		System.out.println(GR);
 		
-		return CG.toString() ;
+		return GR.toString() ;
 	}
 	
 	public static String delete() {
