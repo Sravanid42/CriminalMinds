@@ -6,7 +6,7 @@ import javax.swing.JLabel;
 
 //import UI.*;
 
-public class Catherine
+public class Crim3
 {
 	//make objects
 	String name;
@@ -18,7 +18,7 @@ public class Catherine
 	String crime;
 	String other;
 	
-	public Catherine( String n, String a, String ht, String g, String ha, String s, String c, String o)
+	public Crim3( String n, String a, String ht, String g, String ha, String s, String c, String o)
 	{	
 		this.name = n;
 		this.age = a;
@@ -39,7 +39,7 @@ public class Catherine
 	public static String main(String[] args)
 	{
 		//add
-		Catherine CG = new Catherine("Catherine Gu","17", "5'4''", "F", "black", "CA", "Annoying Sravani", "Last Seen: Over a Zoom call");
+		Crim3 CG = new Crim3("Catherine Gu","17", "5'4''", "F", "black", "CA", "Annoying Sravani", "Last Seen: Over a Zoom call");
 		System.out.println(CG);
 		
 		return CG.toString() ;
