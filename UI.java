@@ -13,12 +13,20 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JButton;
 import javax.swing.JTextPane;
+
+import criminalinfo.Criminals;
+
 import java.awt.Font;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.JTextArea;
 
 public class UI extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private JTextField textField;
 	
 	/**
 	 * Launch the application.
@@ -35,8 +43,10 @@ public class UI extends JFrame {
 			}
 		});
 	}
+
+	
+	
 	public UI() {
-		getContentPane().setBackground(new Color(135, 206, 250));
 		getContentPane().setLayout(null);
 		
 		JLabel lblCriminalDatabase = new JLabel("Criminal Database");
@@ -49,7 +59,16 @@ public class UI extends JFrame {
 		getContentPane().add(textField);
 		textField.setColumns(10);
 		
+		JTextPane display = new JTextPane();
+		display.setBounds(15, 132, 793, 358);
+		getContentPane().add(display);
+		
 		JButton btnDisplayAll = new JButton("Display all");
+		btnDisplayAll.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				display.setText(Criminals.main(null));
+			}
+		});
 		btnDisplayAll.setFont(new Font("Rockwell", Font.PLAIN, 14));
 		btnDisplayAll.setBounds(15, 36, 104, 26);
 		getContentPane().add(btnDisplayAll);
@@ -58,10 +77,6 @@ public class UI extends JFrame {
 		btnSearch.setFont(new Font("Rockwell", Font.PLAIN, 14));
 		btnSearch.setBounds(704, 36, 104, 26);
 		getContentPane().add(btnSearch);
-		
-		JTextArea textArea = new JTextArea();
-		textArea.setBounds(10, 114, 798, 390);
-		getContentPane().add(textArea);
 		
 		JButton btnSortByAge = new JButton("Sort by Age");
 		btnSortByAge.addActionListener(new ActionListener() {
@@ -95,13 +110,9 @@ public class UI extends JFrame {
 		btnFirstName.setFont(new Font("Rockwell", Font.PLAIN, 14));
 		btnFirstName.setBounds(175, 83, 138, 21);
 		getContentPane().add(btnFirstName);
+
 		
 		
 	}
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	private JTextField textField;
 }
