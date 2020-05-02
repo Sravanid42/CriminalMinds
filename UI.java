@@ -16,6 +16,7 @@ import javax.swing.JTextPane;
 
 import criminalinfo.Criminals;
 
+
 import java.awt.Font;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
@@ -47,6 +48,7 @@ public class UI extends JFrame {
 	
 	
 	public UI() {
+		getContentPane().setBackground(Color.GRAY);
 		getContentPane().setLayout(null);
 		
 		JLabel lblCriminalDatabase = new JLabel("Criminal Database");
@@ -111,7 +113,27 @@ public class UI extends JFrame {
 		btnFirstName.setBounds(175, 83, 138, 21);
 		getContentPane().add(btnFirstName);
 
+		JButton btnCharacteristics = new JButton("Characteristics");
+		btnCharacteristics.setFont(new Font("Rockwell", Font.PLAIN, 14));
+		btnCharacteristics.setBounds(850, 83, 138, 21);
+		btnCharacteristics.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Characteristics frame = new Characteristics();
+				frame.setVisible(true);
+			}
+		});
+		getContentPane().add(btnCharacteristics);
 		
+		JButton btnShowGraph = new JButton("Graphs");
+		btnShowGraph.setFont(new Font("Rockwell", Font.PLAIN, 14));
+		btnShowGraph.setBounds(990, 83, 138, 21);
+		btnShowGraph.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Graphs frame = new Graphs();
+				frame.setVisible(true);
+			}
+		});
+		getContentPane().add(btnShowGraph);
 		
 	}
 
