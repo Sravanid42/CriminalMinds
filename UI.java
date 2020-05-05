@@ -62,7 +62,7 @@ public class UI extends JFrame {
 		textField.setColumns(10);
 		
 		JTextPane display = new JTextPane();
-		display.setBounds(15, 132, 793, 358);
+		display.setBounds(15, 176, 793, 314);
 		getContentPane().add(display);
 		
 		JButton btnDisplayAll = new JButton("Display all");
@@ -86,12 +86,12 @@ public class UI extends JFrame {
 			}
 		});
 		btnSortByAge.setFont(new Font("Rockwell", Font.PLAIN, 14));
-		btnSortByAge.setBounds(339, 83, 138, 21);
+		btnSortByAge.setBounds(349, 83, 125, 21);
 		getContentPane().add(btnSortByAge);
 		
 		JButton btnSortByState = new JButton("Sort by State");
 		btnSortByState.setFont(new Font("Rockwell", Font.PLAIN, 14));
-		btnSortByState.setBounds(501, 83, 138, 21);
+		btnSortByState.setBounds(522, 83, 125, 21);
 		getContentPane().add(btnSortByState);
 		
 		JButton btnLastName = new JButton("Last A-Z");
@@ -100,22 +100,26 @@ public class UI extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		btnLastName.setBounds(15, 83, 138, 21);
+		btnLastName.setBounds(15, 83, 125, 21);
 		getContentPane().add(btnLastName);
 		
 		JButton btnSortByDate = new JButton("Sort by Date");
 		btnSortByDate.setFont(new Font("Rockwell", Font.PLAIN, 14));
-		btnSortByDate.setBounds(670, 83, 138, 21);
+		btnSortByDate.setBounds(683, 83, 125, 21);
 		getContentPane().add(btnSortByDate);
 		
 		JButton btnFirstName = new JButton("First A-Z");
+		btnFirstName.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btnFirstName.setFont(new Font("Rockwell", Font.PLAIN, 14));
-		btnFirstName.setBounds(175, 83, 138, 21);
+		btnFirstName.setBounds(182, 83, 125, 21);
 		getContentPane().add(btnFirstName);
 
 		JButton btnCharacteristics = new JButton("Characteristics");
 		btnCharacteristics.setFont(new Font("Rockwell", Font.PLAIN, 14));
-		btnCharacteristics.setBounds(850, 83, 138, 21);
+		btnCharacteristics.setBounds(250, 126, 138, 21);
 		btnCharacteristics.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Characteristics frame = new Characteristics();
@@ -126,7 +130,7 @@ public class UI extends JFrame {
 		
 		JButton btnShowGraph = new JButton("Graphs");
 		btnShowGraph.setFont(new Font("Rockwell", Font.PLAIN, 14));
-		btnShowGraph.setBounds(990, 83, 138, 21);
+		btnShowGraph.setBounds(436, 126, 138, 21);
 		btnShowGraph.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Graphs frame = new Graphs();
