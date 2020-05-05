@@ -62,7 +62,7 @@ public class UI extends JFrame {
 		textField.setColumns(10);
 		
 		JTextPane display = new JTextPane();
-		display.setBounds(15, 176, 793, 314);
+		display.setBounds(15, 161, 793, 329);
 		getContentPane().add(display);
 		
 		JButton btnDisplayAll = new JButton("Display all");
