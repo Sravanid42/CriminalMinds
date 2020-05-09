@@ -22,7 +22,7 @@ import java.awt.Font;
 public class Characteristics extends JFrame {
 	private JTextField textField;
 	public Characteristics() {
-		setBounds(100, 100, 450, 150);
+		setBounds(100, 100, 450, 550);
 		setBackground(Color.LIGHT_GRAY);
 		getContentPane().setLayout(null);
 		

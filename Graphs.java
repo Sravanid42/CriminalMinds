@@ -23,7 +23,7 @@ import javax.swing.SwingConstants;
 public class Graphs extends JFrame {
 	public Graphs() {
 		getContentPane().setFont(new Font("Tahoma", Font.PLAIN, 27));
-		setBounds(100, 100, 450, 150);
+		setBounds(100, 100, 450, 550);
 		setBackground(Color.LIGHT_GRAY);
 		getContentPane().setLayout(null);
 		

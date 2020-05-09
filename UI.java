@@ -48,6 +48,9 @@ public class UI extends JFrame {
 	
 	
 	public UI() {
+		getContentPane().setForeground(new Color(0, 0, 0));
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 850, 600);
 		getContentPane().setBackground(Color.GRAY);
 		getContentPane().setLayout(null);
 		
@@ -80,7 +83,7 @@ public class UI extends JFrame {
 		btnSearch.setBounds(704, 36, 104, 26);
 		getContentPane().add(btnSearch);
 		
-		JButton btnSortByAge = new JButton("Sort by Age");
+		JButton btnSortByAge = new JButton("Serial Killers");
 		btnSortByAge.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
@@ -89,12 +92,12 @@ public class UI extends JFrame {
 		btnSortByAge.setBounds(349, 83, 125, 21);
 		getContentPane().add(btnSortByAge);
 		
-		JButton btnSortByState = new JButton("Sort by State");
+		JButton btnSortByState = new JButton("Burglars");
 		btnSortByState.setFont(new Font("Rockwell", Font.PLAIN, 14));
 		btnSortByState.setBounds(522, 83, 125, 21);
 		getContentPane().add(btnSortByState);
 		
-		JButton btnLastName = new JButton("Last A-Z");
+		JButton btnLastName = new JButton("Terrorists");
 		btnLastName.setFont(new Font("Rockwell", Font.PLAIN, 14));
 		btnLastName.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -108,7 +111,7 @@ public class UI extends JFrame {
 		btnSortByDate.setBounds(683, 83, 125, 21);
 		getContentPane().add(btnSortByDate);
 		
-		JButton btnFirstName = new JButton("First A-Z");
+		JButton btnFirstName = new JButton("Murderers");
 		btnFirstName.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
@@ -140,5 +143,4 @@ public class UI extends JFrame {
 		getContentPane().add(btnShowGraph);
 		
 	}
-
 }
