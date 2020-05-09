@@ -1,3 +1,4 @@
+package util;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.EventQueue;
@@ -16,11 +17,11 @@ import javax.swing.JTextPane;
 
 import criminalinfo.Criminals;
 
-
 import java.awt.Font;
 import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.JTextArea;
+import javax.swing.SwingConstants;
 
 public class UI extends JFrame {
 	/**
@@ -50,22 +51,23 @@ public class UI extends JFrame {
 	public UI() {
 		getContentPane().setForeground(new Color(0, 0, 0));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 850, 600);
-		getContentPane().setBackground(Color.GRAY);
+		setBounds(100, 100, 850, 700);
+		getContentPane().setBackground(Color.BLACK);
 		getContentPane().setLayout(null);
 		
 		JLabel lblCriminalDatabase = new JLabel("Criminal Database");
-		lblCriminalDatabase.setFont(new Font("Rockwell", Font.PLAIN, 18));
+		lblCriminalDatabase.setForeground(Color.LIGHT_GRAY);
+		lblCriminalDatabase.setFont(new Font("Dialog", Font.BOLD, 18));
 		lblCriminalDatabase.setBounds(329, 0, 164, 37);
 		getContentPane().add(lblCriminalDatabase);
 		
 		textField = new JTextField();
-		textField.setBounds(129, 33, 565, 29);
+		textField.setBounds(128, 156, 565, 29);
 		getContentPane().add(textField);
 		textField.setColumns(10);
 		
 		JTextPane display = new JTextPane();
-		display.setBounds(15, 161, 793, 329);
+		display.setBounds(12, 289, 793, 329);
 		getContentPane().add(display);
 		
 		JButton btnDisplayAll = new JButton("Display all");
@@ -75,12 +77,12 @@ public class UI extends JFrame {
 			}
 		});
 		btnDisplayAll.setFont(new Font("Rockwell", Font.PLAIN, 14));
-		btnDisplayAll.setBounds(15, 36, 104, 26);
+		btnDisplayAll.setBounds(12, 156, 104, 26);
 		getContentPane().add(btnDisplayAll);
 		
 		JButton btnSearch = new JButton("Search");
 		btnSearch.setFont(new Font("Rockwell", Font.PLAIN, 14));
-		btnSearch.setBounds(704, 36, 104, 26);
+		btnSearch.setBounds(705, 156, 104, 26);
 		getContentPane().add(btnSearch);
 		
 		JButton btnSortByAge = new JButton("Serial Killers");
@@ -89,12 +91,12 @@ public class UI extends JFrame {
 			}
 		});
 		btnSortByAge.setFont(new Font("Rockwell", Font.PLAIN, 14));
-		btnSortByAge.setBounds(349, 83, 125, 21);
+		btnSortByAge.setBounds(366, 198, 125, 21);
 		getContentPane().add(btnSortByAge);
 		
 		JButton btnSortByState = new JButton("Burglars");
 		btnSortByState.setFont(new Font("Rockwell", Font.PLAIN, 14));
-		btnSortByState.setBounds(522, 83, 125, 21);
+		btnSortByState.setBounds(525, 198, 125, 21);
 		getContentPane().add(btnSortByState);
 		
 		JButton btnLastName = new JButton("Terrorists");
@@ -103,12 +105,12 @@ public class UI extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		btnLastName.setBounds(15, 83, 125, 21);
+		btnLastName.setBounds(12, 198, 125, 21);
 		getContentPane().add(btnLastName);
 		
 		JButton btnSortByDate = new JButton("Sort by Date");
 		btnSortByDate.setFont(new Font("Rockwell", Font.PLAIN, 14));
-		btnSortByDate.setBounds(683, 83, 125, 21);
+		btnSortByDate.setBounds(680, 198, 125, 21);
 		getContentPane().add(btnSortByDate);
 		
 		JButton btnFirstName = new JButton("Murderers");
@@ -117,12 +119,12 @@ public class UI extends JFrame {
 			}
 		});
 		btnFirstName.setFont(new Font("Rockwell", Font.PLAIN, 14));
-		btnFirstName.setBounds(182, 83, 125, 21);
+		btnFirstName.setBounds(189, 198, 125, 21);
 		getContentPane().add(btnFirstName);
 
 		JButton btnCharacteristics = new JButton("Characteristics");
 		btnCharacteristics.setFont(new Font("Rockwell", Font.PLAIN, 14));
-		btnCharacteristics.setBounds(250, 126, 138, 21);
+		btnCharacteristics.setBounds(12, 241, 138, 21);
 		btnCharacteristics.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Characteristics frame = new Characteristics();
@@ -133,7 +135,7 @@ public class UI extends JFrame {
 		
 		JButton btnShowGraph = new JButton("Graphs");
 		btnShowGraph.setFont(new Font("Rockwell", Font.PLAIN, 14));
-		btnShowGraph.setBounds(436, 126, 138, 21);
+		btnShowGraph.setBounds(667, 241, 138, 21);
 		btnShowGraph.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Graphs frame = new Graphs();
@@ -141,6 +143,12 @@ public class UI extends JFrame {
 			}
 		});
 		getContentPane().add(btnShowGraph);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\Sravani\\Downloads\\tape2.png"));
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setBounds(0, 38, 832, 105);
+		getContentPane().add(lblNewLabel);
 		
 	}
 }

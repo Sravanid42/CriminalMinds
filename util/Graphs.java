@@ -1,3 +1,4 @@
+package util;
 
 import java.awt.Color;
 import java.awt.Container;
@@ -18,28 +19,27 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.JTextPane;
 import java.awt.Font;
+import javax.swing.SwingConstants;
 //
-public class Characteristics extends JFrame {
-	private JTextField textField;
-	public Characteristics() {
+public class Graphs extends JFrame {
+	public Graphs() {
+		getContentPane().setFont(new Font("Tahoma", Font.PLAIN, 27));
 		setBounds(100, 100, 450, 550);
 		setBackground(Color.LIGHT_GRAY);
 		getContentPane().setLayout(null);
 		
-		getContentPane().setBackground(Color.LIGHT_GRAY);
+		getContentPane().setBackground(Color.BLACK);
 		getContentPane().setLayout(null);
 		
-		textField = new JTextField();
-		textField.setBounds(153, 17, 231, 22);
-		getContentPane().add(textField);
-		textField.setColumns(10);
+		JLabel lblGraphs = new JLabel("Graphs");
+		lblGraphs.setForeground(Color.WHITE);
+		lblGraphs.setHorizontalAlignment(SwingConstants.CENTER);
+		lblGraphs.setFont(new Font("Tahoma", Font.PLAIN, 19));
+		lblGraphs.setBounds(149, 13, 125, 30);
+		getContentPane().add(lblGraphs);
 		
-		JLabel lblCharacteristic = new JLabel("Characteristic:");
-		lblCharacteristic.setBounds(50, 21, 91, 16);
-		getContentPane().add(lblCharacteristic);
-		
-		JPanel panel = new JPanel();
-		panel.setBounds(12, 60, 383, 188);
-		getContentPane().add(panel);
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setBounds(117, 54, 56, 16);
+		getContentPane().add(lblNewLabel);
 	}
 }
